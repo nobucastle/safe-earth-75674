@@ -8,7 +8,7 @@ if (!link) {
 
 print('接続に成功しました。<br>');
 
-$result = pg_query('SELECT name, name_kana__c, syubetsu__c FROM salesforce.tou_jinji__c ORDER BY systemmodstamp DESC');
+$result = pg_query('SELECT name, name_kana__c, syubetsu__c FROM tou_jinji__c ORDER BY systemmodstamp DESC');
 if (!$result) {
     die('クエリーが失敗しました。'.pg_last_error());
 }

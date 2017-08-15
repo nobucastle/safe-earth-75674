@@ -1,19 +1,18 @@
  <?php echo '<p>Hello World</p>'; 
 
 $dbopts = parse_url(getenv('DATABASE_URL'));
-$app->register(new Csanquer\Silex\PdoServiceProvider\Provider\PDOServiceProvider('pdo'),
-	array(
-	'pdo.server' => array(
-	'driver' => 'pgsql',
-	'user' => $dbopts["user"],
-	'password' => $dbopts["pass"],
-	'host' => $dbopts["host"],
-	'port' => $dbopts["port"],
-	'dbname' => ltrim($dbopts["path"],'/')
-	 )
-    )
-);
+$link = pg_connect($dbopts);
+if (!link) {
+	die('接続失敗です。'.pg_last_error());
+}
 
+print('接続に成功しました。<br>');
+
+$close_flag = pg_close($link);
+
+if($close_flag){
+	print('切断に成功しました。<br>');
+}
 
 ?> 
 

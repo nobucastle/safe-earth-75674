@@ -7,9 +7,9 @@
 </head>
 
 <body>
-  	<p><?php echo "name：" . $name_chr; ?></p>
-  	<p><?php echo "kana：" . $name_kana_chr; ?></p>
-  	<p><?php echo "syu：" . $syubetsu_chr; ?></p>
+  	<p><?php echo "議員名：" . $name_chr; ?></p>
+  	<p><?php echo "ふりがな：" . $name_kana_chr; ?></p>
+  	<p><?php echo "種別：" . $syubetsu_chr; ?></p>
 </body>
 </html>
 

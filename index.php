@@ -33,19 +33,5 @@ print "\n";
 
 ?> 
 
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title>お問い合わせフォーム</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<div><h1>Company Name</h1></div>
-	<div><h2>お問い合わせ</h2></div>
-	<div>
-   	<p><?php echo $name_chr; ?></p>
-    </div>
-</body>
-</html>
 
 

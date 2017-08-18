@@ -7,9 +7,9 @@
 </head>
 
 <body>
-  	<p><?php echo "name：" & $name_chr; ?></p>
-  	<p><?php echo "kana：" & $name_kana_chr; ?></p>
-  	<p><?php echo "syu：" & $syubetsu_chr; ?></p>
+  	<p><?php echo "name：" . $name_chr; ?></p>
+  	<p><?php echo "kana：" . $name_kana_chr; ?></p>
+  	<p><?php echo "syu：" . $syubetsu_chr; ?></p>
 </body>
 </html>
 

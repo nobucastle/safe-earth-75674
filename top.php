@@ -7,11 +7,9 @@
 </head>
 
 <body>
-	<div><h1>Company Name</h1></div>
-	<div><h2>お問い合わせ</h2></div>
-	<div>
-   	<p><?php echo $name_chr; ?></p>
-    </div>
+  	<p><?php echo $name_chr; ?></p>
+  	<p><?php echo $name_kana_chr; ?></p>
+  	<p><?php echo $syubetsu_chr; ?></p>
 </body>
 </html>
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>お問い合わせフォーム</title>
-<?php include('./index.php'); ?>
+
 </head>
 
 <body>

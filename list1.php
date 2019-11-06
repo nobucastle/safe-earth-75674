@@ -30,4 +30,4 @@ class AccountsController extends AppController
 	}
 }
 
-//kkkkk
+?> 

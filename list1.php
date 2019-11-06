@@ -7,7 +7,7 @@ use bjsmasth\Salesforce;
 
 class AccountsController extends AppController
 {
-	public $components = ["SFReset"]
+	public $components = ["SFReset"];
 
 	public function beforeFilter(Event $event)
 	{
@@ -31,3 +31,4 @@ class AccountsController extends AppController
 }
 
 ?> 
+

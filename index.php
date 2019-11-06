@@ -1,15 +1,34 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>お問い合わせフォーム</title>
-<?php include('./top.php'); ?>
-</head>
+<?php
+namespace App\Controller;
 
-<body>
-  	<p><?php echo "議員名：" . $name_chr; ?></p>
-  	<p><?php echo "ふりがな：" . $name_kana_chr; ?></p>
-  	<p><?php echo "種別：" . $syubetsu_chr; ?></p>
-</body>
-</html>
+use App\Controller\AppController;
+use Cake\Event\Event;
+use bjsmasth\Salesforce;
+
+class AccountsController extends AppController
+{
+	public $components = ["SFReset"]
+
+	public function beforeFilter(Event $event)
+	{
+		parent::beforeFilter($event);
+	}
+
+	public function index()
+	{
+		$this->autoRender = fales;
+
+		try{
+		    $query = 'SELECT Id, Name FROM ACCOUNT LIMIT 100';
+		    $crud = new Salesforce\CRUD();
+		    print_r("<pre>");
+		    print_r($crud->query($query));
+		    print_r("</pre>");
+		} catch (Exception $e) {
+		    echo '捕捉した例外: ', $e->getMessage(), "\n";
+		}
+	}
+}
+
+?> 
 

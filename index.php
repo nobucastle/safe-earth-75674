@@ -9,11 +9,6 @@ class AccountsController extends AppController
 {
 	public $components = ["SFReset"]
 
-	public function beforeFilter(Event $event)
-	{
-		parent::beforeFilter($event);
-	}
-
 
 }
 

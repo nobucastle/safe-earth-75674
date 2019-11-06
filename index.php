@@ -7,7 +7,7 @@ use bjsmasth\Salesforce;
 
 class AccountsController extends AppController
 {
-	public $components;
+	public $components = ["SFReset"];
 
 
 }
